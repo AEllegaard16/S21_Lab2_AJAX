@@ -4,14 +4,19 @@
 
 @section Scripts{
     <script>
-        // TODO: Écrire votre script
+        $(function() {
+            $.get('/Home/Partielle', null,
+                function(data) {
+                    $("#partial1").html(data);
+                });
+        });
     </script>
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <!--Utiliser ce div pour afficher la 1ere vue partielle-->
-    <div></div>
+    <div id="partial1"></div>
     <!--Utiliser ce div pour afficher la 2e vue partielle-->
     <div></div>
 </div>
