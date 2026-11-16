@@ -35,5 +35,10 @@ namespace ExemplesAJAX.Controllers
         {
             return PartialView();
         }
+
+        public IActionResult Partielle2(Partielle2DTO dto)
+        {
+            return PartialView(dto);
+        }
     }
 }
